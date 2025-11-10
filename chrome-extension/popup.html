@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0 0 16px 0;
+      color: #111827;
+    }
+    .section {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #4F46E5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    button:hover {
+      background: #4338CA;
+    }
+    .status {
+      margin-top: 12px;
+      padding: 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .status.success {
+      background: #d1fae5;
+      color: #065f46;
+    }
+    .status.error {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pi2 Explainer</h1>
+  
+  <div class="section">
+    <label for="backend-url">Backend URL</label>
+    <input type="text" id="backend-url" placeholder="http://localhost:3001" />
+  </div>
+
+  <button id="save-config">Save Configuration</button>
+  
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+{
+  "name": "pi2-explainer-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Pi2 Explainer Chrome Extension using LLM (OpenRouter/Fireworks)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "crawler": "node crawler/indexer.js"
+  },
+  "keywords": ["pi2", "explainer", "rag", "llm", "fireworks", "dobby"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2",
+    "uuid": "^9.0.1",
+    "cheerio": "^1.0.0-rc.12",
+    "openai": "^4.20.1",
+    "node-cache": "^5.1.2",
+    "express-rate-limit": "^7.1.5"
+  }
+}
+
