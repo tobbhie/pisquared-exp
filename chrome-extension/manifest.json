@@ -4,12 +4,11 @@
   "version": "1.0.0",
   "description": "Get AI-powered explanations for PiSquared content",
   "permissions": [
-    "activeTab",
     "storage"
   ],
   "host_permissions": [
-    "https://pi2.network/*",
-    "http://localhost:3001/*"
+    "http://localhost:3001/*",
+    "https://*.onrender.com/*"
   ],
   "background": {
     "service_worker": "background.js"
