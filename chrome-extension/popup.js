@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const statusDiv = document.getElementById('status');
 
   // Load current configuration
-  const { backendUrl } = await chrome.storage.sync.get({ backendUrl: 'http://localhost:3001' });
+  const { backendUrl } = await chrome.storage.sync.get({ backendUrl: 'https://pisquared-exp.onrender.com' });
   backendUrlInput.value = backendUrl;
 
   // Save configuration

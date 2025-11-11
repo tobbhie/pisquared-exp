@@ -2,7 +2,7 @@
 
 // Default configuration
 const DEFAULT_CONFIG = {
-  backendUrl: 'http://localhost:3001',
+  backendUrl: 'https://pisquared-exp.onrender.com',
   enabled: true
 };
 
